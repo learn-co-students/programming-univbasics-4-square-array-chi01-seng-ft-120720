@@ -5,12 +5,10 @@ def square_array(array)
     new_array = []
     counter = 0 
     
-    while counter < array.length do 
-      num = array[counter]
-      squared = num ** 2
-      new_array.push(squared)
-      counter += 1   
-    end
-  
+    array.length.times do |index|
+      binding.pry 
+      new_array.push(array[index] ** 2)
+      counter += 1 
+    end 
     new_array
 end
